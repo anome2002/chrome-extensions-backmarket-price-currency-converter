@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Backmarket Price Converter",
+  "version": "1.0",
+  "description": "Converts prices from USD to any selected currency on Backmarket",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "options_page": "/src/options.html",
+  "content_scripts": [
+    {
+      "matches": ["*://www.backmarket.com/*"],
+      "js": ["/src/content.js"],
+      "css": ["/src/static/notification.css"]
+    }
+  ]
+}
