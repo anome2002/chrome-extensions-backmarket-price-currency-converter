@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const saveButton = document.getElementById('save');
   const githubLink = document.getElementById('github-link');
 
-  const githubURL = "https://github.com/your-username";
+  const githubURL = "https://github.com/anome2002/chrome-extensions-backmarket-price-currency-converter";
   githubLink.href = githubURL;
 
   async function fetchCurrencies() {
